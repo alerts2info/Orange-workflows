@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(567.0, 228.0)" />
+		<node id="1" name="Linear Regression" qualified_name="Orange.widgets.model.owlinearregression.OWLinearRegression" project_name="Orange3" version="" title="Linear Regression" position="(388.0, 226.0)" />
+		<node id="2" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(207.0, 220.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="0" source_channel="Coefficients" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(322.0, 27.0, 429.0, 46.0)" font-family="MS Shell Dlg 2" font-size="24">WORKFLOW OF REGRESSION MODEL</text>
+		<text id="1" type="text/plain" rect="(101.0, 65.0, 318.0, 67.0)" font-family="MS Shell Dlg 2" font-size="20">Double clicke on File widget and select housing dataset</text>
+		<arrow id="2" start="(214.0, 124.0)" end="(214.00000000000003, 189.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(141.0, 363.0, 373.0, 212.0)" font-family="MS Shell Dlg 2" font-size="20">Linear Regression is connected with File widget (Housing dataset)
+Linear regression widget provides the following options when you double click on the widget:
+No regularization
+Ridge regression (L2)
+Lasso regression (L1)
+Elastic net regression</text>
+		<arrow id="4" start="(380.00000000000006, 363.0)" end="(381.00000000000017, 293.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(636.0, 101.0, 298.0, 87.0)" font-family="MS Shell Dlg 2" font-size="20">Data table could be connected to Linear Regression to observe coefficients of linear regression
+(Double click on Data Table widget to see the coefficients)</text>
+		<arrow id="6" start="(632.0, 149.0)" end="(592.0, 193.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': False, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x1f\x00\x00\x01\x00\x00\x00\x05C\x00\x00\x02\xcb\x00\x00\x04 \x00\x00\x01\x1e\x00\x00\x05B\x00\x00\x02\xca\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04 \x00\x00\x01\x1e\x00\x00\x05B\x00\x00\x02\xca', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="1" format="literal">{'alpha_index': 49, 'auto_apply': True, 'autosend': True, 'controlAreaVisible': True, 'fit_intercept': True, 'l2_ratio': 0.5, 'learner_name': '', 'reg_type': 3, 'ridge': False, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xce\x00\x00\x01d\x00\x00\x04\x0f\x00\x00\x02\xc9\x00\x00\x02\xcf\x00\x00\x01\x82\x00\x00\x04\x0e\x00\x00\x02\xc8\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xcf\x00\x00\x01\x82\x00\x00\x04\x0e\x00\x00\x02\xc8', '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASViQQAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxFQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2hvdXNpbmcudGFilIwGcHJlZml4lIwPc2FtcGxlLWRhdGFzZXRzlIwHcmVscGF0aJSM
+C2hvdXNpbmcudGFilIwFdGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3JtYXSUTnViaAYpgZR9
+lChoCYxCQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2lyaXMudGFilGgLaAxoDYwIaXJpcy50YWKUaA9oEGgRaBBoEk51YmWMC3JlY2VudF91
+cmxzlF2UjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAI0AAAAiwAAA80AAALMAAAC
+NQAAAKkAAAPMAAACywAAAAAAAAAABgAAAAI1AAAAqQAAA8wAAALLlIwLc2hlZXRfbmFtZXOUfZSM
+BnNvdXJjZZRLAIwDdXJslGgQjA1kb21haW5fZWRpdG9ylH2UjAtfX3ZlcnNpb25fX5RLAYwQY29u
+dGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2U
+KIwGdmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaB99lGgrXZQoXZQojARDUklNlIwUT3JhbmdlLmRh
+dGEudmFyaWFibGWUjBJDb250aW51b3VzVmFyaWFibGWUk5RLAGgQiGVdlCiMAlpOlGgzSwBoEIhl
+XZQojAVJTkRVU5RoM0sAaBCIZV2UKIwEQ0hBU5RoM0sAaBCIZV2UKIwDTk9YlGgzSwBoEIhlXZQo
+jAJSTZRoM0sAaBCIZV2UKIwDQUdFlGgzSwBoEIhlXZQojANESVOUaDNLAGgQiGVdlCiMA1JBRJRo
+M0sAaBCIZV2UKIwDVEFYlGgzSwBoEIhlXZQojAdQVFJBVElPlGgzSwBoEIhlXZQojAFClGgzSwBo
+EIhlXZQojAVMU1RBVJRoM0sAaBCIZV2UKIwETUVEVpRoM0sBaBCIZWVzaCFLAXWMCmF0dHJpYnV0
+ZXOUKIwEQ1JJTZRLAoaUjAJaTpRLAoaUjAVJTkRVU5RLAoaUjARDSEFTlEsChpSMA05PWJRLAoaU
+jAJSTZRLAoaUjANBR0WUSwKGlIwDRElTlEsChpSMA1JBRJRLAoaUjANUQViUSwKGlIwHUFRSQVRJ
+T5RLAoaUaElLAoaUjAVMU1RBVJRLAoaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOUjARNRURWlEsC
+hpSFlIwSbW9kaWZpZWRfdmFyaWFibGVzlF2UdWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

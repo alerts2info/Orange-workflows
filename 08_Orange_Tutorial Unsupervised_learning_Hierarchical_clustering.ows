@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(348.0, 150.0)" />
+		<node id="1" name="Distances" qualified_name="Orange.widgets.unsupervised.owdistances.OWDistances" project_name="Orange3" version="" title="Distances" position="(490.0, 151.0)" />
+		<node id="2" name="Hierarchical Clustering" qualified_name="Orange.widgets.unsupervised.owhierarchicalclustering.OWHierarchicalClustering" project_name="Orange3" version="" title="Hierarchical Clustering" position="(637.0, 151.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Distances" sink_channel="Distances" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(196.0, 28.0, 764.0, 45.0)" font-family="MS Shell Dlg 2" font-size="24">WORKFLOW OF UNSUPERVISED LEARNING - Hierarchical Clustering</text>
+		<text id="1" type="text/plain" rect="(90.0, 271.0, 336.0, 105.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Dataset widget, double click on Grades for English and Math.</text>
+		<arrow id="2" start="(231.0, 264.0)" end="(312.0, 189.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(583.0, 281.0, 291.0, 112.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Hierarchical Clustersing widget to see the clusters</text>
+		<arrow id="4" start="(702.0, 276.0)" end="(660.0, 206.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04&gt;\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01M\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00]\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00L\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00}\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01&gt;\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00}', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x99\x00\x00\x00e\x00\x00\x05\xe6\x00\x00\x02\xfd\x00\x00\x01\x9a\x00\x00\x00\x83\x00\x00\x05\xe5\x00\x00\x02\xfc\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x9a\x00\x00\x00\x83\x00\x00\x05\xe5\x00\x00\x02\xfc', 'selected_id': 'core\\grades-two.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'autocommit': True, 'axis': 0, 'controlAreaVisible': True, 'metric_idx': 0, 'normalized_dist': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03^\x00\x00\x01q\x00\x00\x04\x01\x00\x00\x02X\x00\x00\x03_\x00\x00\x01\x8f\x00\x00\x04\x00\x00\x00\x02W\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03_\x00\x00\x01\x8f\x00\x00\x04\x00\x00\x00\x02W', '__version__': 3}</properties>
+		<properties node_id="2" format="pickle">gASVxwQAAAAAAAB9lCiMF2Fubm90YXRpb25faWZfZW51bWVyYXRllIwLRW51bWVyYXRpb26UjBNh
+bm5vdGF0aW9uX2lmX25hbWVzlIwETmFtZZSMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNp
+YmxllIiMCWN1dF9yYXRpb5SMFW51bXB5LmNvcmUubXVsdGlhcnJheZSMBnNjYWxhcpSTlIwFbnVt
+cHmUjAVkdHlwZZSTlIwCZjiUiYiHlFKUKEsDjAE8lE5OTkr/////Sv////9LAHSUYkMIAAAAAAAA
+SUCUhpRSlIwRbGFiZWxfb25seV9zdWJzZXSUiYwHbGlua2FnZZRLBIwJbWF4X2RlcHRolEsGjAdw
+cnVuaW5nlEsAjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAH5AAABJgAABNcAAAM5
+AAAB+gAAAUQAAATWAAADOAAAAAAAAAAABgAAAAH6AAABRAAABNYAAAM4lIwQc2VsZWN0aW9uX21l
+dGhvZJRLAYwFdG9wX26USwOMC3pvb21fZmFjdG9ylEsAjAtfX3ZlcnNpb25fX5RLAowUX19zZXNz
+aW9uX3N0YXRlX2RhdGGUfZSMB3ZlcnNpb26USwBLAEsAh5RzjBBjb250ZXh0X3NldHRpbmdzlF2U
+KIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwK
+YW5ub3RhdGlvbpSMB1N0dWRlbnSUS2eGlIwIY29sb3JfYnmUTkr+////hpRoH0sCdYwKYXR0cmli
+dXRlc5R9lCiMB0VuZ2xpc2iUSwKMB0FsZ2VicmGUSwJ1jAVtZXRhc5R9lIwHU3R1ZGVudJRLA3N1
+YmgoKYGUfZQoaCt9lChoLYwLY2hvbGVzdGVyb2yUS2aGlGgwjAZnZW5kZXKUS2WGlGgfSwJ1aDJ9
+lCiMA2FnZZRLAmg+SwGMCmNoZXN0IHBhaW6USwGMCHJlc3QgU0JQlEsCaDxLAowZZmFzdGluZyBi
+bG9vZCBzdWdhciA+IDEyMJRLAYwIcmVzdCBFQ0eUSwGMBm1heCBIUpRLAowNZXhlcmMgaW5kIGFu
+Z5RLAYwOU1QgYnkgZXhlcmNpc2WUSwKMEXNsb3BlIHBlYWsgZXhjIFNUlEsBjBVtYWpvciB2ZXNz
+ZWxzIGNvbG9yZWSUSwKMBHRoYWyUSwGMEmRpYW1ldGVyIG5hcnJvd2luZ5RLAXVoNn2UdWJoKCmB
+lH2UKGgrfZQojAphbm5vdGF0aW9ulIwEdHlwZZRLZYaUjAhjb2xvcl9ieZRoUktlhpRoH0sCdWgy
+fZQojARoYWlylEsBjAhmZWF0aGVyc5RLAYwEZWdnc5RLAYwEbWlsa5RLAYwIYWlyYm9ybmWUSwGM
+B2FxdWF0aWOUSwGMCHByZWRhdG9ylEsBjAd0b290aGVklEsBjAhiYWNrYm9uZZRLAYwIYnJlYXRo
+ZXOUSwGMCHZlbm9tb3VzlEsBjARmaW5zlEsBjARsZWdzlEsBjAR0YWlslEsBjAhkb21lc3RpY5RL
+AYwHY2F0c2l6ZZRLAWhSSwF1aDZ9lIwEbmFtZZRLA3N1YmV1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

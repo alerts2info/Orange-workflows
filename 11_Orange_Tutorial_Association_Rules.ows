@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(129.0, 90.0)" />
+		<node id="1" name="Discretize" qualified_name="Orange.widgets.data.owdiscretize.OWDiscretize" project_name="Orange3" version="" title="Discretize" position="(270.0, 90.0)" />
+		<node id="2" name="Frequent Itemsets" qualified_name="orangecontrib.associate.widgets.owitemsets.OWItemsets" project_name="Orange3-Associate" version="" title="Frequent Itemsets" position="(452.0, 91.0)" />
+		<node id="3" name="Association Rules" qualified_name="orangecontrib.associate.widgets.owassociate.OWAssociate" project_name="Orange3-Associate" version="" title="Association Rules" position="(712.0, 89.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="2" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(58.0, 10.0, 720.0, 53.0)" font-family="MS Shell Dlg 2" font-size="24">WORKFLOW OF FREQUENT ITEMSETS AND ASSOCIATION RULES</text>
+		<text id="1" type="text/plain" rect="(-347.0, 152.0, 521.0, 91.0)" font-family="MS Shell Dlg 2" font-size="20">Double click to open window showing available datasets, double click on Breast Cancer Wisconsin. The green dot is an indicater that the dataset has been uploaded</text>
+		<arrow id="2" start="(53.00000000000001, 153.0)" end="(105.0, 105.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(271.0, 293.0, 338.0, 87.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Frequent Itemsets widget, Set minimal support, Max number of itemsets, and click on Find Itemsets.
+Select the Itemsets generated.</text>
+		<arrow id="4" start="(439.0, 284.0)" end="(433.0, 156.0)" fill="#C1272D" />
+		<arrow id="5" start="(235.0, 123.0)" end="(63.0, 330.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(595.0, 196.0, 440.0, 64.0)" font-family="MS Shell Dlg 2" font-size="20">Set Min support, Min confidence, Max rules and click on Find Rules. </text>
+		<arrow id="7" start="(787.0, 191.0)" end="(751.0, 147.0)" fill="#C1272D" />
+		<text id="8" type="text/plain" rect="(-304.0, 339.0, 504.0, 72.0)" font-family="MS Shell Dlg 2" font-size="20">To generate association rules, data must be discretized first. This could be done using the "Discretize" widget.</text>
+		<text id="9" type="text/plain" rect="(-300.0, 418.0, 485.0, 64.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Discretize widget, select all attributes, then select any one of the discretization method (for ex: Entropy vs MDL)</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03}\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01M\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00]\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00L\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00}\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00}\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00}', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x005\x00\x00\x01\x86\x00\x00\x02]\x00\x00\x03\x1e\x00\x00\x006\x00\x00\x01\xa4\x00\x00\x02\\\x00\x00\x03\x1d\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x006\x00\x00\x01\xa4\x00\x00\x02\\\x00\x00\x03\x1d', 'selected_id': 'core\\breast-cancer-wisconsin.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVuAEAAAAAAAB9lCiMCGF1dG9zZW5klIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdp
+ZGdldEdlb21ldHJ5lENCAdnQywADAAAAAABJAAABrgAAAnQAAAMIAAAASgAAAcwAAAJzAAADBwAA
+AAAAAAAABgAAAABKAAABzAAAAnMAAAMHlIwJdmFyX2hpbnRzlH2UKE6MIE9yYW5nZS53aWRnZXRz
+LmRhdGEub3dkaXNjcmV0aXpllIwHVmFySGludJSTlGgHjAdNZXRob2RzlJOUSwKFlFKUKYaUgZSM
+D0NsdW1wIHRoaWNrbmVzc5SJhpRoCWgNKYaUgZSMDlVuaWZfQ2VsbF9TaXpllImGlGgTjA9Vbmlm
+X0NlbGxfU2hhcGWUiYaUaBOMEU1hcmdpbmFsX0FkaGVzaW9ulImGlGgTjBBTaW5nbGVfQ2VsbF9T
+aXpllImGlGgTjAtCYXJlX051Y2xlaZSJhpRoE4wQQmxhbmRfQ2hyb21hdGluZZSJhpRoE4wPTm9y
+bWFsX051Y2xlb2xplImGlGgTjAdNaXRvc2VzlImGlGgTdYwLX192ZXJzaW9uX1+USwN1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'autoFind': False, 'autoSend': True, 'controlAreaVisible': True, 'filterKeywords': '', 'filterMaxItems': 999, 'filterMinItems': 1, 'filterSearch': True, 'maxItemsets': 10000, 'minSupport': 10, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00;\x00\x00\x01h\x00\x00\x02\xca\x00\x00\x03\x1e\x00\x00\x00&lt;\x00\x00\x01\x86\x00\x00\x02\xc9\x00\x00\x03\x1d\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00&lt;\x00\x00\x01\x86\x00\x00\x02\xc9\x00\x00\x03\x1d', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'autoFind': False, 'autoSend': True, 'classify': False, 'controlAreaVisible': True, 'filterAntecedentMax': 1, 'filterAntecedentMin': 1, 'filterConsequentMax': 1, 'filterConsequentMin': 1, 'filterKeywordsAntecedent': '', 'filterKeywordsConsequent': '', 'filterSearch': False, 'maxRules': 10000, 'minConfidence': 20, 'minSupport': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xdd\x00\x00\x01j\x00\x00\x05\xd9\x00\x00\x03\x1d\x00\x00\x02\xde\x00\x00\x01\x88\x00\x00\x05\xd8\x00\x00\x03\x1c\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xde\x00\x00\x01\x88\x00\x00\x05\xd8\x00\x00\x03\x1c', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

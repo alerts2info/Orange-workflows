@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(317.0, 88.0)" />
+		<node id="1" name="Discretize" qualified_name="Orange.widgets.data.owdiscretize.OWDiscretize" project_name="Orange3" version="" title="Discretize" position="(448.0, 89.0)" />
+		<node id="2" name="Frequent Itemsets" qualified_name="orangecontrib.associate.widgets.owitemsets.OWItemsets" project_name="Orange3-Associate" version="" title="Frequent Itemsets" position="(628.0, 89.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(232.0, 16.0, 429.0, 44.0)" font-family="MS Shell Dlg 2" font-size="24">WORKFLOW OF FREQUENT ITEMSETS</text>
+		<arrow id="1" start="(637.0, 143.00000000000003)" end="(755.0, 232.0)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(34.0, 378.0, 509.0, 77.0)" font-family="MS Shell Dlg 2" font-size="20">To generate association rules, data must be discretized first. This could be done using the "Discretize" widget.</text>
+		<arrow id="3" start="(440.0, 151.0)" end="(427.0, 379.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(38.0, 497.0, 478.0, 66.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Discretize widget,select all attribute, then select any one of the discretization method (for ex: Entropy vs MDL)</text>
+		<text id="5" type="text/plain" rect="(688.0, 244.0, 551.0, 69.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Frequent Itemsets, select Minimal support, Max. number of itemsets, and then click on Find Itemsets.</text>
+		<text id="6" type="text/plain" rect="(28.0, 192.0, 407.0, 137.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Dataset widget to open window showing available datasets, double click on Breast Cancer Wisconsin. The green dot is an indicater that the dataset has been uploaded</text>
+		<arrow id="7" start="(165.0, 171.0)" end="(265.0, 108.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04-\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01M\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00]\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00L\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00}\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01-\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00}', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x99\x00\x00\x00e\x00\x00\x05\xe6\x00\x00\x02\xfd\x00\x00\x01\x9a\x00\x00\x00\x83\x00\x00\x05\xe5\x00\x00\x02\xfc\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x9a\x00\x00\x00\x83\x00\x00\x05\xe5\x00\x00\x02\xfc', 'selected_id': 'core\\breast-cancer-wisconsin.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVuAEAAAAAAAB9lCiMCGF1dG9zZW5klIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdp
+ZGdldEdlb21ldHJ5lENCAdnQywADAAAAAABNAAABiAAAAkwAAALYAAAATgAAAaYAAAJLAAAC1wAA
+AAAAAAAABgAAAABOAAABpgAAAksAAALXlIwJdmFyX2hpbnRzlH2UKE6MIE9yYW5nZS53aWRnZXRz
+LmRhdGEub3dkaXNjcmV0aXpllIwHVmFySGludJSTlGgHjAdNZXRob2RzlJOUSwKFlFKUKYaUgZSM
+D0NsdW1wIHRoaWNrbmVzc5SJhpRoCWgNKYaUgZSMDlVuaWZfQ2VsbF9TaXpllImGlGgTjA9Vbmlm
+X0NlbGxfU2hhcGWUiYaUaBOMEU1hcmdpbmFsX0FkaGVzaW9ulImGlGgTjBBTaW5nbGVfQ2VsbF9T
+aXpllImGlGgTjAtCYXJlX051Y2xlaZSJhpRoE4wQQmxhbmRfQ2hyb21hdGluZZSJhpRoE4wPTm9y
+bWFsX051Y2xlb2xplImGlGgTjAdNaXRvc2VzlImGlGgTdYwLX192ZXJzaW9uX1+USwN1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'autoFind': False, 'autoSend': True, 'controlAreaVisible': True, 'filterKeywords': '', 'filterMaxItems': 999, 'filterMinItems': 1, 'filterSearch': True, 'maxItemsets': 10000, 'minSupport': 10, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03(\x00\x00\x00\x94\x00\x00\x05\xb7\x00\x00\x02J\x00\x00\x03)\x00\x00\x00\xb2\x00\x00\x05\xb6\x00\x00\x02I\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03)\x00\x00\x00\xb2\x00\x00\x05\xb6\x00\x00\x02I', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

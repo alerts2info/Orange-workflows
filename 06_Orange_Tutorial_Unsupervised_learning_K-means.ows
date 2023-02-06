@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(172.0, 120.0)" />
+		<node id="1" name="k-Means" qualified_name="Orange.widgets.unsupervised.owkmeans.OWKMeans" project_name="Orange3" version="" title="k-Means" position="(337.0, 120.0)" />
+		<node id="2" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(678.0, 120.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(243.0, 23.0, 613.0, 41.0)" font-family="MS Shell Dlg 2" font-size="24">WORKFLOW OF UNSUPERVISED LEARNING - K-MEANS</text>
+		<arrow id="1" start="(688.0, 172.0)" end="(711.0, 256.0)" fill="#C1272D" />
+		<arrow id="2" start="(332.0, 174.0)" end="(333.0, 392.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(31.0, 215.0, 303.0, 127.0)" font-family="MS Shell Dlg 2" font-size="18">K-means widgets provides 2 options to select number of clusters.
+1. Fixed no of clusters
+2. No of clusters based on Silhouette scores</text>
+		<arrow id="4" start="(299.0, 135.0)" end="(235.0, 199.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(135.0, 406.0, 422.0, 128.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on K-means widget to get the window to select 
+number of clusters, 
+Silhouette scores</text>
+		<text id="6" type="text/plain" rect="(640.0, 256.0, 284.0, 68.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Scatter plot widget, select x and y-axis values to see the scatter plot.
+
+We can also click on find informative projections to decide x and y-axis values.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV4goAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxLQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2hlYXJ0X2Rpc2Vhc2UudGFilIwGcHJlZml4lIwPc2FtcGxlLWRhdGFzZXRzlIwHcmVs
+cGF0aJSMEWhlYXJ0X2Rpc2Vhc2UudGFilIwFdGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3Jt
+YXSUTnViaAYpgZR9lChoCYxCQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2Fn
+ZXMvT3JhbmdlL2RhdGFzZXRzL2lyaXMudGFilGgLaAxoDYwIaXJpcy50YWKUaA9oEGgRaBBoEk51
+YmgGKYGUfZQoaAmMRUM6L1Byb2dyYW0gRmlsZXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09y
+YW5nZS9kYXRhc2V0cy9ob3VzaW5nLnRhYpRoC2gMaA2MC2hvdXNpbmcudGFilGgPaBBoEWgQaBJO
+dWJljAtyZWNlbnRfdXJsc5RdlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAACNAAA
+AIsAAAPNAAACzAAAAjUAAACpAAADzAAAAssAAAAAAAAAAAYAAAACNQAAAKkAAAPMAAACy5SMC3No
+ZWV0X25hbWVzlH2UjAZzb3VyY2WUSwCMA3VybJRoEIwNZG9tYWluX2VkaXRvcpR9lIwLX192ZXJz
+aW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdD
+b250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAl2YXJpYWJsZXOUXZRoI32UaC9dlChdlCiMA2Fn
+ZZSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwSQ29udGludW91c1ZhcmlhYmxllJOUSwBoEIhlXZQo
+jAZnZW5kZXKUaDWMEERpc2NyZXRlVmFyaWFibGWUk5RLAIwMZmVtYWxlLCBtYWxllIllXZQojApj
+aGVzdCBwYWlulGg7SwCMNGFzeW1wdG9tYXRpYywgYXR5cGljYWwgYW5nLCBub24tYW5naW5hbCwg
+dHlwaWNhbCBhbmeUiWVdlCiMCHJlc3QgU0JQlGg3SwBoEIhlXZQojAtjaG9sZXN0ZXJvbJRoN0sA
+aBCIZV2UKIwZZmFzdGluZyBibG9vZCBzdWdhciA+IDEyMJRoO0sAjAQwLCAxlIhlXZQojAhyZXN0
+IEVDR5RoO0sAjCxub3JtYWwsIGxlZnQgdmVudCBoeXBlcnRyb3BoeSwgU1QtVCBhYm5vcm1hbJSJ
+ZV2UKIwGbWF4IEhSlGg3SwBoEIhlXZQojA1leGVyYyBpbmQgYW5nlGg7SwCMBDAsIDGUiGVdlCiM
+DlNUIGJ5IGV4ZXJjaXNllGg3SwBoEIhlXZQojBFzbG9wZSBwZWFrIGV4YyBTVJRoO0sAjBx1cHNs
+b3BpbmcsIGZsYXQsIGRvd25zbG9waW5nlIllXZQojBVtYWpvciB2ZXNzZWxzIGNvbG9yZWSUaDdL
+AGgQiGVdlCiMBHRoYWyUaDtLAIwnbm9ybWFsLCByZXZlcnNhYmxlIGRlZmVjdCwgZml4ZWQgZGVm
+ZWN0lIllXZQojBJkaWFtZXRlciBuYXJyb3dpbmeUaDtLAYwEMCwgMZSIZWVzaCVLAXWMCmF0dHJp
+YnV0ZXOUKIwDYWdllEsChpSMBmdlbmRlcpRdlCiMBmZlbWFsZZSMBG1hbGWUZYaUjApjaGVzdCBw
+YWlulF2UKIwMYXN5bXB0b21hdGljlIwMYXR5cGljYWwgYW5nlIwLbm9uLWFuZ2luYWyUjAt0eXBp
+Y2FsIGFuZ5RlhpSMCHJlc3QgU0JQlEsChpSMC2Nob2xlc3Rlcm9slEsChpSMGWZhc3RpbmcgYmxv
+b2Qgc3VnYXIgPiAxMjCUXZQojAEwlIwBMZRlhpSMCHJlc3QgRUNHlF2UKIwGbm9ybWFslIwVbGVm
+dCB2ZW50IGh5cGVydHJvcGh5lIwNU1QtVCBhYm5vcm1hbJRlhpSMBm1heCBIUpRLAoaUjA1leGVy
+YyBpbmQgYW5nlF2UKGhxaHJlhpSMDlNUIGJ5IGV4ZXJjaXNllEsChpSMEXNsb3BlIHBlYWsgZXhj
+IFNUlF2UKIwJdXBzbG9waW5nlIwEZmxhdJSMC2Rvd25zbG9waW5nlGWGlIwVbWFqb3IgdmVzc2Vs
+cyBjb2xvcmVklEsChpSMBHRoYWyUXZQojAZub3JtYWyUjBFyZXZlcnNhYmxlIGRlZmVjdJSMDGZp
+eGVkIGRlZmVjdJRlhpR0lIwFbWV0YXOUKYwKY2xhc3NfdmFyc5SMEmRpYW1ldGVyIG5hcnJvd2lu
+Z5RdlChocWhyZYaUhZSMEm1vZGlmaWVkX3ZhcmlhYmxlc5RdlHViaCopgZR9lChoLX2UKGgvXZRo
+I32UaC9dlChdlCiMDHNlcGFsIGxlbmd0aJRoN0sAaBCIZV2UKIwLc2VwYWwgd2lkdGiUaDdLAGgQ
+iGVdlCiMDHBldGFsIGxlbmd0aJRoN0sAaBCIZV2UKIwLcGV0YWwgd2lkdGiUaDdLAGgQiGVdlCiM
+BGlyaXOUaDtLAYwsSXJpcy1zZXRvc2EsIElyaXMtdmVyc2ljb2xvciwgSXJpcy12aXJnaW5pY2GU
+iWVlc2glSwF1aFwojAxzZXBhbCBsZW5ndGiUSwKGlIwLc2VwYWwgd2lkdGiUSwKGlIwMcGV0YWwg
+bGVuZ3RolEsChpSMC3BldGFsIHdpZHRolEsChpR0lGiQKWiRjARpcmlzlF2UKIwLSXJpcy1zZXRv
+c2GUjA9JcmlzLXZlcnNpY29sb3KUjA5JcmlzLXZpcmdpbmljYZRlhpSFlGiWXZR1YmgqKYGUfZQo
+aC19lCiMCXZhcmlhYmxlc5RdlIwNZG9tYWluX2VkaXRvcpR9lGi9XZQoXZQojARDUklNlGg3SwBo
+EIhlXZQojAJaTpRoN0sAaBCIZV2UKIwFSU5EVVOUaDdLAGgQiGVdlCiMBENIQVOUaDdLAGgQiGVd
+lCiMA05PWJRoN0sAaBCIZV2UKIwCUk2UaDdLAGgQiGVdlCiMA0FHRZRoN0sAaBCIZV2UKIwDRElT
+lGg3SwBoEIhlXZQojANSQUSUaDdLAGgQiGVdlCiMA1RBWJRoN0sAaBCIZV2UKIwHUFRSQVRJT5Ro
+N0sAaBCIZV2UKIwBQpRoN0sAaBCIZV2UKIwFTFNUQVSUaDdLAGgQiGVdlCiMBE1FRFaUaDdLAWgQ
+iGVlc2glSwF1aFwojARDUklNlEsChpSMAlpOlEsChpSMBUlORFVTlEsChpSMBENIQVOUSwKGlIwD
+Tk9YlEsChpSMAlJNlEsChpSMA0FHRZRLAoaUjANESVOUSwKGlIwDUkFElEsChpSMA1RBWJRLAoaU
+jAdQVFJBVElPlEsChpRo2UsChpSMBUxTVEFUlEsChpR0lGiQKWiRjARNRURWlEsChpSFlGiWXZR1
+YmV1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'k': 2, 'k_from': 3, 'k_to': 10, 'max_iterations': 100, 'n_init': 10, 'normalize': True, 'optimize_k': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00z\x00\x00\x01\xd4\x00\x00\x02:\x00\x00\x03\x03\x00\x00\x00{\x00\x00\x01\xf2\x00\x00\x029\x00\x00\x03\x02\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00{\x00\x00\x01\xf2\x00\x00\x029\x00\x00\x03\x02', 'selection': 0, 'smart_init': 0, '__version__': 2}</properties>
+		<properties node_id="2" format="pickle">gASVXAQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAJZAAABNAAABL8AAAMU
+AAACWgAAAVIAAAS+AAADEwAAAAAAAAAABgAAAAJaAAABUgAABL4AAAMTlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRLgIwNY2xhc3NfZGVuc2l0eZSJjBFqaXR0ZXJfY29udGludW91c5SJjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsKjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAphdHRyX2NvbG9ylIwSZGlh
+bWV0ZXIgbmFycm93aW5nlEtlhpSMCmF0dHJfbGFiZWyUTkr+////hpSMCmF0dHJfc2hhcGWUTkr+
+////hpSMCWF0dHJfc2l6ZZROSv7///+GlIwGYXR0cl94lIwDYWdllEtmhpSMBmF0dHJfeZSMBm1h
+eCBIUpRLZoaUaAp9lGgWSwV1jAphdHRyaWJ1dGVzlH2UKGgqSwKMBmdlbmRlcpRLAYwKY2hlc3Qg
+cGFpbpRLAYwIcmVzdCBTQlCUSwKMC2Nob2xlc3Rlcm9slEsCjBlmYXN0aW5nIGJsb29kIHN1Z2Fy
+ID4gMTIwlEsBjAhyZXN0IEVDR5RLAWgtSwKMDWV4ZXJjIGluZCBhbmeUSwGMDlNUIGJ5IGV4ZXJj
+aXNllEsCjBFzbG9wZSBwZWFrIGV4YyBTVJRLAYwVbWFqb3IgdmVzc2VscyBjb2xvcmVklEsCjAR0
+aGFslEsBaCFLAXWMBW1ldGFzlH2UKIwHQ2x1c3RlcpRLAYwKU2lsaG91ZXR0ZZRLAnV1YmgbKYGU
+fZQoaB59lChoIGg/S2WGlGgjTkr+////hpRoJU5K/v///4aUaCdOSv7///+GlGgpjAxwZXRhbCBs
+ZW5ndGiUS2aGlGgsjAtwZXRhbCB3aWR0aJRLZoaUaAp9lGgWSwV1aDB9lCiMDHNlcGFsIGxlbmd0
+aJRLAowLc2VwYWwgd2lkdGiUSwKMDHBldGFsIGxlbmd0aJRLAowLcGV0YWwgd2lkdGiUSwKMBGly
+aXOUSwF1aD19lCiMB0NsdXN0ZXKUSwGMClNpbGhvdWV0dGWUSwJ1dWJldS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

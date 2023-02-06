@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(95.0, 96.0)" />
+		<node id="1" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(238.0, 97.0)" />
+		<node id="2" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(706.0, 149.0)" />
+		<node id="3" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(910.0, 103.0)" />
+		<node id="4" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="Preprocess" position="(800.0, 241.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="3" source_channel="Data Sample" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Learner" sink_channel="Learner" enabled="true" />
+		<link id="3" source_node_id="4" sink_node_id="3" source_channel="Preprocessor" sink_channel="Preprocessor" enabled="true" />
+		<link id="4" source_node_id="1" sink_node_id="3" source_channel="Remaining Data" sink_channel="Test Data" enabled="true" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(226.0, 16.0, 751.0, 41.0)" font-family="MS Shell Dlg 2" font-size="24">TRANSFORM WIDGETS IN ORANGE - DATA SAMPLER, PREPROCESS</text>
+		<text id="1" type="text/plain" rect="(248.0, 207.0, 447.0, 89.0)" font-family="MS Shell Dlg 2" font-size="20">Data Sampler widget allows the user to divide the data into training (sample) data and testing (remaining) data with their choice of proportion</text>
+		<text id="2" type="text/plain" rect="(237.0, 329.0, 589.0, 361.0)" font-family="MS Shell Dlg 2" font-size="20">The Preprocess widget comes with several preprocessing options (listed below) from which we can use one or more in a sequence of our requirement.  
+
+Discretize Continuous Variables
+Continuize Discrete Variables
+Impute Missing Values
+Select Relevant Features
+Select Random Features
+Normalize Features
+Randomize
+Remove Sparse Features
+Principal Component Analysis
+CUR Matrix Decomposition</text>
+		<arrow id="3" start="(298.0, 207.0)" end="(270.0, 159.0)" fill="#C1272D" />
+		<arrow id="4" start="(767.0, 260.0)" end="(665.0, 331.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(794.0, 539.0, 491.0, 46.0)" font-family="MS Shell Dlg 2" font-size="20">Double click on Data Sampler and Preprocess widget</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVoQkAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxLQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2hlYXJ0X2Rpc2Vhc2UudGFilIwGcHJlZml4lIwPc2FtcGxlLWRhdGFzZXRzlIwHcmVs
+cGF0aJSMEWhlYXJ0X2Rpc2Vhc2UudGFilIwFdGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3Jt
+YXSUTnViaAYpgZR9lChoCYxCQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2Fn
+ZXMvT3JhbmdlL2RhdGFzZXRzL2lyaXMudGFilGgLaAxoDYwIaXJpcy50YWKUaA9oEGgRaBBoEk51
+YmgGKYGUfZQoaAmMQUM6L1Byb2dyYW0gRmlsZXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09y
+YW5nZS9kYXRhc2V0cy96b28udGFilGgLaAxoDYwHem9vLnRhYpRoD2gQaBFoEGgSTnViaAYpgZR9
+lChoCYxFQzovUHJvZ3JhbSBGaWxlcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2hvdXNpbmcudGFilGgLaAxoDYwLaG91c2luZy50YWKUaA9oEGgRaBBoEk51YmgGKYGU
+fZQoaAmMTEM6L1Byb2dyYW0gRmlsZXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9k
+YXRhc2V0cy9icm93bi1zZWxlY3RlZC50YWKUaAtoDGgNjBJicm93bi1zZWxlY3RlZC50YWKUaA9o
+EGgRaBBoEk51YmgGKYGUfZQoaAmMRUM6L1Byb2dyYW0gRmlsZXMvT3JhbmdlL0xpYi9zaXRlLXBh
+Y2thZ2VzL09yYW5nZS9kYXRhc2V0cy90aXRhbmljLnRhYpRoC2gMaA2MC3RpdGFuaWMudGFilGgP
+aBBoEWgQaBJOdWJoBimBlH2UKGgJjChDOi9Vc2Vycy9TcmkvRWFydGhxdWFrZS9zZWlzbW9fZGF0
+YS54bHN4lGgLTmgNTmgPaBBoEWgQaBJOdWJljAtyZWNlbnRfdXJsc5RdlIxGaHR0cHM6Ly9maWxl
+LmJpb2xhYi5zaS90ZXh0LXNlbWFudGljcy9kYXRhL3Byb3Bvc2Fscy10by1nb3Zlcm5tZW50LTFr
+L5RhjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAFHAAAAQAAABLsAAAMXAAABSAAA
+AF4AAAS6AAADFgAAAAAAAAAABgAAAAFIAAAAXgAABLoAAAMWlIwLc2hlZXRfbmFtZXOUfZSMBnNv
+dXJjZZRLAIwDdXJslGgQjA1kb21haW5fZWRpdG9ylH2UjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwG
+dmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaDN9lGg/XZQoXZQojANhZ2WUjBRPcmFuZ2UuZGF0YS52
+YXJpYWJsZZSMEkNvbnRpbnVvdXNWYXJpYWJsZZSTlEsAaBCIZV2UKIwGZ2VuZGVylGhFjBBEaXNj
+cmV0ZVZhcmlhYmxllJOUSwCMDGZlbWFsZSwgbWFsZZSJZV2UKIwKY2hlc3QgcGFpbpRoS0sAjDRh
+c3ltcHRvbWF0aWMsIGF0eXBpY2FsIGFuZywgbm9uLWFuZ2luYWwsIHR5cGljYWwgYW5nlIllXZQo
+jAhyZXN0IFNCUJRoR0sAaBCIZV2UKIwLY2hvbGVzdGVyb2yUaEdLAGgQiGVdlCiMGWZhc3Rpbmcg
+Ymxvb2Qgc3VnYXIgPiAxMjCUaEtLAIwEMCwgMZSIZV2UKIwIcmVzdCBFQ0eUaEtLAIwsbm9ybWFs
+LCBsZWZ0IHZlbnQgaHlwZXJ0cm9waHksIFNULVQgYWJub3JtYWyUiWVdlCiMBm1heCBIUpRoR0sA
+aBCIZV2UKIwNZXhlcmMgaW5kIGFuZ5RoS0sAjAQwLCAxlIhlXZQojA5TVCBieSBleGVyY2lzZZRo
+R0sAaBCIZV2UKIwRc2xvcGUgcGVhayBleGMgU1SUaEtLAIwcdXBzbG9waW5nLCBmbGF0LCBkb3du
+c2xvcGluZ5SJZV2UKIwVbWFqb3IgdmVzc2VscyBjb2xvcmVklGhHSwBoEIhlXZQojAR0aGFslGhL
+SwCMJ25vcm1hbCwgcmV2ZXJzYWJsZSBkZWZlY3QsIGZpeGVkIGRlZmVjdJSJZV2UKIwSZGlhbWV0
+ZXIgbmFycm93aW5nlGhLSwGMBDAsIDGUiGVlc2g1SwF1jAphdHRyaWJ1dGVzlCiMA2FnZZRLAoaU
+jAZnZW5kZXKUXZQojAZmZW1hbGWUjARtYWxllGWGlIwKY2hlc3QgcGFpbpRdlCiMDGFzeW1wdG9t
+YXRpY5SMDGF0eXBpY2FsIGFuZ5SMC25vbi1hbmdpbmFslIwLdHlwaWNhbCBhbmeUZYaUjAhyZXN0
+IFNCUJRLAoaUjAtjaG9sZXN0ZXJvbJRLAoaUjBlmYXN0aW5nIGJsb29kIHN1Z2FyID4gMTIwlF2U
+KIwBMJSMATGUZYaUjAhyZXN0IEVDR5RdlCiMBm5vcm1hbJSMFWxlZnQgdmVudCBoeXBlcnRyb3Bo
+eZSMDVNULVQgYWJub3JtYWyUZYaUjAZtYXggSFKUSwKGlIwNZXhlcmMgaW5kIGFuZ5RdlChogWiC
+ZYaUjA5TVCBieSBleGVyY2lzZZRLAoaUjBFzbG9wZSBwZWFrIGV4YyBTVJRdlCiMCXVwc2xvcGlu
+Z5SMBGZsYXSUjAtkb3duc2xvcGluZ5RlhpSMFW1ham9yIHZlc3NlbHMgY29sb3JlZJRLAoaUjAR0
+aGFslF2UKIwGbm9ybWFslIwRcmV2ZXJzYWJsZSBkZWZlY3SUjAxmaXhlZCBkZWZlY3SUZYaUdJSM
+BW1ldGFzlCmMCmNsYXNzX3ZhcnOUjBJkaWFtZXRlciBuYXJyb3dpbmeUXZQoaIFogmWGlIWUjBJt
+b2RpZmllZF92YXJpYWJsZXOUXZR1YmF1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 10, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 70, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00A\x00\x00\x01X\x00\x00\x01\t\x00\x00\x02\xe9\x00\x00\x00B\x00\x00\x01v\x00\x00\x01\x08\x00\x00\x02\xe8\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00B\x00\x00\x01v\x00\x00\x01\x08\x00\x00\x02\xe8', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': None, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVfwMAAAAAAAB9lCiMFGNvbXBhcmlzb25fY3JpdGVyaW9ulEsAjBJjb250cm9sQXJlYVZpc2li
+bGWUiIwNY3Zfc3RyYXRpZmllZJSIjAduX2ZvbGRzlEsCjAluX3JlcGVhdHOUSwOMCnJlc2FtcGxp
+bmeUSwCMBHJvcGWURz+5mZmZmZmajAtzYW1wbGVfc2l6ZZRLCYwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZRDQgHZ0MsAAwAAAAABlgAAAPEAAARsAAACZQAAAZcAAAEPAAAEawAAAmQAAAAAAAAAAAYAAAAB
+lwAAAQ8AAARrAAACZJSMEnNodWZmbGVfc3RyYXRpZmllZJSIjAh1c2Vfcm9wZZSJjAtzY29yZV90
+YWJsZZR9lIwMc2hvd25fc2NvcmVzlI+UKIwDQVVDlIwHQy1JbmRleJSMAlIylIwEUk1TRZSMAkYx
+lIwDTVNFlIwDTUFFlIwCQ0GUjAlQcmVjaXNpb26UjAZSZWNhbGyUkHOMC19fdmVyc2lvbl9flEsD
+jBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOU
+KYGUfZQojAZ2YWx1ZXOUfZQojA9jbGFzc19zZWxlY3Rpb26UjCEoTm9uZSwgc2hvdyBhdmVyYWdl
+IG92ZXIgY2xhc3NlcymUSv////+GlIwMZm9sZF9mZWF0dXJllE5K/v///4aUjBVmb2xkX2ZlYXR1
+cmVfc2VsZWN0ZWSUiUr+////hpRoDX2UaBtLA3WMCmF0dHJpYnV0ZXOUKIwDYWdllEsChpSMBmdl
+bmRlcpRLAYaUjApjaGVzdCBwYWlulEsBhpSMCHJlc3QgU0JQlEsChpSMC2Nob2xlc3Rlcm9slEsC
+hpSMGWZhc3RpbmcgYmxvb2Qgc3VnYXIgPiAxMjCUSwGGlIwIcmVzdCBFQ0eUSwGGlIwGbWF4IEhS
+lEsChpSMDWV4ZXJjIGluZCBhbmeUSwGGlIwOU1QgYnkgZXhlcmNpc2WUSwKGlIwRc2xvcGUgcGVh
+ayBleGMgU1SUSwGGlIwVbWFqb3IgdmVzc2VscyBjb2xvcmVklEsChpSMBHRoYWyUSwGGlHSUjAVt
+ZXRhc5QpjApjbGFzc192YXJzlIwSZGlhbWV0ZXIgbmFycm93aW5nlEsBhpSFlHViYXUu
+</properties>
+		<properties node_id="4" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x95\x00\x00\x01\x1e\x00\x00\x05\xcc\x00\x00\x03\x1e\x00\x00\x03\x96\x00\x00\x01&lt;\x00\x00\x05\xcb\x00\x00\x03\x1d\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03\x96\x00\x00\x01&lt;\x00\x00\x05\xcb\x00\x00\x03\x1d', 'storedsettings': {'name': '', 'preprocessors': [('orange.preprocess.impute', {}), ('orange.preprocess.scale', {'method': 4}), ('orange.preprocess.fss', {})]}, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
